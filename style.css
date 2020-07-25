@@ -1,0 +1,84 @@
+body {
+  background-image: linear-gradient(
+      rgba(192, 108, 132, 0.4),
+      rgba(122, 49, 70, 0.8)
+    ),
+    url(https://engaged-solutions.co.uk/wp-content/uploads/2018/10/developers.jpg);
+  background-size: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas:
+    "head head head"
+    ". form .";
+}
+header {
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  grid-area: head;
+}
+
+header h1 {
+  font-family: "Slabo 27px", serif;
+  font-size: 45px;
+  letter-spacing: 0.1em;
+}
+
+header p {
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: rgba(45, 51, 74, 0.8);
+  color: white;
+  border-radius: 5px;
+  padding: 25px;
+  font-size: 20px;
+  grid-area: form;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+input[placeholder],
+textarea {
+  width: 90%;
+}
+
+select {
+  width: 93%;
+}
+
+p {
+  margin-bottom: 2px;
+}
+
+select,
+::placeholder {
+  font-size: 15px;
+  color: grey;
+}
+
+#comment {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#submit {
+  width: 93%;
+  background-color: rgba(122, 49, 70, 0.8);
+  color: white;
+  font-size: 20px;
+}
